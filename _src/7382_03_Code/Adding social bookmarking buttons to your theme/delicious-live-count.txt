@@ -1,0 +1,9 @@
+<script type='text/javascript'>
+function displayURL(data) {
+var urlinfo = data[0];
+if (!urlinfo.total_posts) return;
+document.getElementById("<?php echo md5("http://".$_SERVER["HTTP_HOST"].$_SERVER["REQUEST_URI"]);?>").innerHTML = urlinfo.total_posts;
+}
+</script>
+
+<script src='http://badges.del.icio.us/feeds/json/url/data?url=<?php the_permalink() ?>&callback=displayURL'></script>

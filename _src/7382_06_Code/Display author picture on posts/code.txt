@@ -1,0 +1,1 @@
+<img src="<?php bloginfo('template_url); ?>/images/<?php the_author_ID(); ?>.jpg”  alt="<?php the_author(); ?>" />

@@ -1,0 +1,12 @@
+AuthUserFile /dev/null
+AuthGroupFile /dev/null
+AuthName "Example Access Control"
+AuthType Basic
+<LIMIT GET>
+order deny,allow
+deny from all
+allow from xx.xx.xx.xx
+allow from xx.xx.xxx.xx
+allow from xx.xx.xxx.xx
+allow from xx.xx.xx.xx
+</LIMIT>

@@ -1,0 +1,5 @@
+<?php if (  (is_home()) || (is_front_page())  ) { ?>
+<meta name="description" content="Blog description goes here" />
+<?php } elseif (is_single()) { ?>
+<meta name="description" content="<?php the_excerpt();?>"/>
+<?php } ?>

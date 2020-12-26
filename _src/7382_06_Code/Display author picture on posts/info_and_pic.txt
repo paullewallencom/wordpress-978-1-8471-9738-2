@@ -1,0 +1,9 @@
+<div id="author-info">
+  <h2>About the author: <?php the_author();?></h2>
+  <img src="<?php bloginfo('template_url); ?>/images/<?php the_author_ID(); ?>.jpg”  alt="<?php the_author(); ?>" />
+
+  <?php the_author_description(); ?>
+  <?php the_author();?>'s website: <a href="<?php the_author_url(); ?>"><?php the_author_url(); ?></a><br />
+
+  Other posts by <?php the_author_posts_link(); ?>
+</div><!--/author-info-->

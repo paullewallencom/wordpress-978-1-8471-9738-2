@@ -1,0 +1,6 @@
+function widget_new_pages(){
+    wp_list_pages('exclude=3,5,9&title_li=');
+}
+if ( function_exists('register_sidebar_widget') ){
+    register_sidebar_widget('pages', 'widget_new_pages');
+}

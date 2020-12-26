@@ -1,0 +1,7 @@
+<?php
+$title 	= get_the_title();
+$keys= explode(" ",$s);
+$title 	= preg_replace('/('.implode('|', $keys) .')/iu',
+'<strong class="search-excerpt">\0</strong>',
+$title);
+?>

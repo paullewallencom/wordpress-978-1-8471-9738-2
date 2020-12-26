@@ -1,0 +1,7 @@
+function insertRss($content) {
+    if(is_feed()){
+        $content = 'text before content'.$content.'<hr /><a href="http://www.wprecipes.com">Did you visited WpRecipes today?</a><hr />';
+    }
+    return $content;
+}
+add_filter('the_content', 'insertRss');

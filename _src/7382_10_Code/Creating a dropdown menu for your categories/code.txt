@@ -1,0 +1,17 @@
+<ul id="nav" class="clearfloat">
+<li><a href="<?php echo get_option('home'); ?>/" class="on">Home</a></li>
+<?php wp_list_pages('title_li='); ?>
+<li class="cat-item"><a href="#">Categories</a>
+<ul class="children">
+<?php wp_list_categories('orderby=name&title_li=');
+$this_category = get_category($cat);
+if (get_category_children($this_category->cat_ID) != "") {
+echo "<ul>";
+wp_list_categories('orderby=id&show_count=0&title_li=
+&use_desc_for_title=1&child_of='.$this_category->cat_ID);
+echo "</ul>";
+}
+?>
+</ul>
+</li>
+</ul>

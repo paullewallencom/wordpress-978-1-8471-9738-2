@@ -1,0 +1,5 @@
+<?php if (is_home() && !is_paged()) || is_single() || is_page() || is_category()){
+    echo '<meta name="robots" content="index,follow" />';
+} else {
+    echo '<meta name="robots" content="noindex,follow" />';
+?>

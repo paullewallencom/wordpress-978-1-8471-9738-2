@@ -1,0 +1,4 @@
+.post.featured {
+    background:#f9f9f9;
+    font-weight:bold;
+}

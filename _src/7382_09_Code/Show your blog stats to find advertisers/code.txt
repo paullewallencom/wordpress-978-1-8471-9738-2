@@ -1,0 +1,23 @@
+Thanks for your interrest in advertising on XXXX.com. below, you’ll find available spots, prices as well as blog stats.
+
+<h2>Spots availables/prices</h2>
+We are currently selling text links as well as 6 125*125 pixels banners spots. Monthly prices are $25 for text links and $50 for banners.
+
+<h2>Blog Stats</h2>
+Google Pagerank: [pagerank]
+Feedburner subscribers: [feedburner_subscribers]
+Alexa rank: [alexa_rank]
+Technorati authority: [technorati_authority]
+Technorati rank: [technorati_rank]
+Users: [user_count]
+Published posts: [post_count]
+Published pages: [page_count]
+Comments: [comment_count]
+Trackbacks: [trackback_count]
+Average comments per post: [avg_comments_per_post]
+Categories: [category_count]
+Tags: [tag_count]
+Links: [link_count]
+Google backlinks: [google_backlinks]
+Yahoo backlinks: [yahoo_backlinks]
+Delicious bookmarks: [delicious_bookmarks]

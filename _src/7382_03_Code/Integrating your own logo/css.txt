@@ -1,0 +1,8 @@
+#headerimg h1{
+background: transparent url(images/logo.png) no-repeat 50% 30px;
+text-indent:-9999px;
+}
+
+#headerimg .description {
+text-indent:-9999px;
+}

@@ -1,0 +1,36 @@
+
+#This part goes where you'd like to display adsense ads
+########################
+
+if (function_exists('scratch99_fromasearchengine')) {
+if (scratch99_fromasearchengine()) {
+echo '<script type="text/javascript"><!--
+google_ad_client = "pub-XXXXXXXXXXXXXXXX";
+google_ad_slot = "4668915978";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+';
+}
+}
+
+
+
+#This part goes into functions.php
+###########################
+
+function scratch99_fromasearchengine(){
+$ref = $_SERVER['HTTP_REFERER'];
+$SE = array('/search?', 'images.google.', 'web.info.com','search.', 'del.icio.us/search', 'soso.com', '/search/', '.yahoo.');
+foreach ($SE as $source) {
+if (strpos($ref,$source)!==false) return true;
+}
+
+return false;
+}
+
+

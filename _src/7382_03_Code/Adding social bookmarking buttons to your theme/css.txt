@@ -1,0 +1,22 @@
+#cwc-vote{
+    /* Don't forget to change the image path */
+    background: #fff url(images/cwc-vote.png) no-repeat top left;
+    width:600px;
+    height:45px;
+    padding-top:35px;
+}
+
+#cwc-vote ul{
+    list-style-type:none;
+    margin-left:-20px;
+}
+
+#cwc-vote ul li{
+    display:inline;
+    margin-right:-10px;
+}
+
+#cwc-vote ul li a{
+    color:#fff;
+    font-size:13px;
+}

@@ -1,0 +1,4 @@
+<title><?php if (is_home () ) { bloginfo('name'); }elseif ( is_category() ) { single_cat_title(); echo ' - ' ; bloginfo('name'); }
+elseif (is_single() ) { single_post_title();}
+elseif (is_page() ) { bloginfo('name'); echo ': '; single_post_title();}
+else { wp_title('',true); } ?></title>

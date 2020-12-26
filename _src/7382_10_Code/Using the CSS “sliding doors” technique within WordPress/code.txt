@@ -1,0 +1,4 @@
+<ul id="nav">
+<li><a href="<?php echo get_option('home'); ?>/"><span>Home</span></a></li>
+<?php echo preg_replace('@\<li([^>]*)>\<a([^>]*)>(.*?)\<\/a>@i’, ‘<li$1><a$2><span>$3</span></a>’, wp_list_pages(’echo=0&orderby=name&exlude=181&title_li=&depth=1′)); ?>
+</ul>

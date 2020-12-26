@@ -1,0 +1,17 @@
+<?php
+/*
+Template Name: Twitter Page
+*/
+?>
+
+<?php get_header(); ?>
+
+<div id="content">
+
+<?php include_once(ABSPATH . WPINC . '/rss.php');
+wp_rss(‘http://twitter.com/statuses/user_timeline/15985955.rss’, 10); ?>
+
+</div>
+
+<?php get_sidebar(); ?>
+<?php get_footer(); ?>

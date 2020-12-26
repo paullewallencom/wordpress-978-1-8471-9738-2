@@ -1,0 +1,30 @@
+
+#This part goes to sidebar.php
+########################
+
+<ul id="sidelist">
+<?php 	/* Widgetized sidebar */
+if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar(1) ) : ?>
+<?php endif; ?>
+</ul><!--/sidelist-->
+
+#This part goes to footer.php
+########################
+<ul id="footerlist">
+<?php 	/* Widgetized footer*/
+if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar(2) ) : ?>
+<?php endif; ?>
+</ul><!--/footerlist-->
+
+
+#This part goes into functions.php
+###########################
+
+if ( function_exists('register_sidebars') )
+register_sidebars(2,array(
+'before_widget' => '<li id="%1$s" class="widget %2$s">',
+'after_widget' => '</li>',
+'before_title' => '<h2 class="widgettitle">',
+'after_title' => '</h2>',
+));
+

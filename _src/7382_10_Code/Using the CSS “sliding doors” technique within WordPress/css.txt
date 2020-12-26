@@ -1,0 +1,16 @@
+#nav a, #nav a:visited {
+display:block;
+}
+#nav a:hover, #nav a:active {
+background:url(images/tab-right.jpg) no-repeat 100% 1px;
+float:left;
+}
+#nav a span {
+float:left;
+display:block;
+}
+#nav a:hover span {
+float:left;
+display:block;
+background: url(images/tab-left.jpg) no-repeat 0 1px;
+}

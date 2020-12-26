@@ -1,0 +1,6 @@
+<?php
+$md5 = md5(get_the_author_email());
+$default = urlencode( 'http://www.yoursite.com/wp-content/themes/yourtheme/images/default_avatar.gif' );
+
+echo "<img src='http://www.gravatar.com/avatar.php?gravatar_id=$md5&amp;size=60&amp;default=$default' alt='' />";
+?>

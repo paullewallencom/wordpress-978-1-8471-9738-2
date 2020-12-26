@@ -1,0 +1,27 @@
+<?php
+/*
+Plugin Name: Test
+Plugin URI: http://www.yourblog.com
+Description: Testing custom widgets
+Author: You!
+Version: 1
+Author URI: http://www.yourblog.com
+*/
+
+function test()
+{
+  echo "<p>My first widget works!</p>";
+}
+function widget_test($args) {
+  extract($args);
+  echo $before_widget;
+  echo $before_title;?>Test&lt?php echo $after_title;
+  sampleHelloWorld();
+  echo $after_widget;
+}
+function test_init()
+{
+  register_sidebar_widget(__('Test'), 'widget_test);
+}
+add_action("plugins_loaded", "test_init"); 
+?>

@@ -1,0 +1,29 @@
+html {
+width:100%
+}
+
+body {
+background-color: #fff;
+color: #000;
+font-size: 12pt;
+}
+
+a {
+color: #000;
+}
+
+img {
+border: 0;
+}
+
+.noprint, #footer, #sidebar{
+display: none;
+}
+
+h1, h2 {
+page-break-before: auto;
+}
+
+p {
+page-break-inside: avoid;
+}

@@ -1,0 +1,9 @@
+<div id="cwc-vote">
+<ul>
+<li><a href="http://del.icio.us/post?url=<?php echo the_permalink(); ?>">Del.icio.us</a></li>
+<li><a href="http://digg.com/submit?url=<?php echo the_permalink(); ?>">Digg</a></li>
+<li><a href="http://www.stumbleupon.com/submit?url=<?php echo the_permalink(); ?>">StumbleUpon</a></li>
+<li><a href="http://reddit.com/submit?url=<?php echo the_permalink(); ?>">Reddit</a></li>
+<li><a href="http://www.dzone.com/links/add.html?url=<?php echo the_permalink(); ?>">Dzone</a></li>
+</ul>
+</div>

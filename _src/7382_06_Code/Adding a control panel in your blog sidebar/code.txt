@@ -1,0 +1,26 @@
+<li>
+  <?php global $user_ID, $user_identity, $user_level ?>
+  <?php if ( $user_ID ) : ?>
+    <h2>Control panel</h2>
+	 <ul>
+	   <li>Identified as <strong><?php echo $user_identity ?></strong>.
+	   <ul>
+		  <li><a href="<?php bloginfo('url') ?>/wp-admin/">Dashboard</a></li>
+
+			<?php if ( $user_level >= 1 ) : ?>
+				<li><a href="<?php bloginfo('url') ?>/wp-admin/post-new.php">Write an article</a></li>
+			<?php endif; ?>
+
+			<li><a href="<?php bloginfo('url') ?>/wp-admin/profile.php">Profile and personal options</a></li>
+			<li><a href="<?php bloginfo('url') ?>/wp-login.php?action=logout&amp;redirect_to=<?php echo urlencode($_SERVER['REQUEST_URI']) ?>">Logout</a></li>
+
+         <?php
+         if (is_single()) {?>
+           <li><a href="<?php bloginfo('wpurl');?>/wp-admin/edit.php?p=<?php the_ID(); ?>">Edit Post</a>
+           </li>
+         <?php } ?>
+
+		</ul>
+	</li>
+	</ul>
+<?php endif; ?>
